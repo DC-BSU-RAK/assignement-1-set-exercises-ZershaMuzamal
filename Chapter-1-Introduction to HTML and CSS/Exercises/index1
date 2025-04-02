@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Favorite Recipe - Spaghetti Carbonara</title>
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
+        
+        <!-- External CSS file -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+    <div class="header-content">
+        <h1>Spaghetti Carbonara</h1>
+        <p>A classic Italian pasta dish</p>
+    </div>
+    </header>
+    <!-- Recipe Description Section -->
+    <section class="description">
+        <div class="container">
+            <h2>About the Dish</h2>
+            <p>Spaghetti Carbonara is a timeless Italian pasta dish that is creamy and rich in flavor. Made with eggs, cheese, pancetta, and pepper, it's a quick yet indulgent meal perfect for a family dinner or special occasion.</p>
+        </div>
+    </section>
+    <!-- Ingredients Section -->
+    <section class="ingredients">
+        <div class="container">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>200g spaghetti</li>
+                <li>100g pancetta</li>
+                <li>2 large eggs</li>
+                <li>50g Pecorino Romano cheese</li>
+                <li>50g Parmesan cheese</li>
+                <li>Freshly ground black pepper</li>
+                <li>Salt, to taste</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Method Section -->
+    <section class="method">
+        <div class="container">
+            <h2>Method</h2>
+            <ol>
+                <li>Boil the spaghetti in salted water according to the package instructions.</li>
+                <li>While the pasta is cooking, fry the pancetta until crispy.</li>
+                <li>In a bowl, whisk together the eggs, Pecorino, Parmesan, and black pepper.</li>
+                <li>Once the pasta is cooked, reserve some of the pasta water and drain the rest.</li>
+                <li>Combine the pasta with the pancetta and toss to coat. Add the egg mixture and stir quickly to create a creamy sauce, adding pasta water as necessary.</li>
+                <li>Season with extra black pepper and serve immediately.</li>
+            </ol>
+        </div>
+    </section>
+    <!-- Footer with social media links -->
+    <footer>
+        <div class="container footer-content">
+            <p>Enjoy your delicious Spaghetti Carbonara!</p>
+            <div class="social-links">
+                <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Pinterest</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
