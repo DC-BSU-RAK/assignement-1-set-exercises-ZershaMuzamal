@@ -1,0 +1,142 @@
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*STYLING THE BODY*/
+body {
+    background-image: url('imagefile/image1.avif');
+    background-size: cover;
+}
+/* STYLING THE HEADER*/
+header {
+    color: #351c1c;
+    text-align: center;
+    padding: 100px 20px;
+}
+/*APPLYING THE GOOGLE FONT*/
+.header-content h1, 
+.header-content p {
+    font-family: 'Rubik Gemstones', sans-serif; 
+    background: rgba(255, 230, 200, 0.7); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.2rem;
+}
+/*THE CONTAINER CLASS FOR CONSISTENT PADDING*/
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*STYLING THE DESCRIPTION SECTION*/
+.description {
+    font-family: 'Rubik Gemstones', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #F5DEB3;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.description h2 {
+    font-family: 'Rubik Gemstones', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-size: 2rem;
+    color: #000000;
+}
+.description p {
+    font-family: 'Rubik Gemstones', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-size: 1rem;
+    color: #555;
+}
+/*STYLING THE INGREDIENTS SECTION*/
+.ingredients {
+    font-family: 'Rubik Gemstones', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    background-color: #F5DEB3;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.ingredients h2 {
+    font-family: 'Rubik Gemstones', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-size: 2rem;
+    color: #000000;
+}
+.ingredients ul {
+    list-style: none;
+}
+.ingredients li {
+    font-family: 'Rubik Gemstones', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    color: #555;
+    padding-left: 20px;
+    position: relative;
+}
+.ingredients li::before {
+    content: '\2022';
+    color: #E67E22;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+}
+/*STYLING THE METHOD SECTION*/
+.method {
+    font-family: 'Rubik Gemstones', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    background-color: #F5DEB3;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.method h2 {
+    font-family: 'Rubik Gemstones', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    color: #000000;
+}
+.method ol {
+    padding-left: 20px;
+}
+.method li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+/*STYLING THE FOOTER SECTION*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
