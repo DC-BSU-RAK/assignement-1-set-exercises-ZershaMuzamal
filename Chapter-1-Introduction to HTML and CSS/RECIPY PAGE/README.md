@@ -1,4 +1,4 @@
-# Chapter 1 Exercises
+ # Chapter 1 Exercises
 
 Each chapter includes one mandatory and one bonus exercise. The mandatory exercise is indicated with a :ballot_box_with_check: and must be completed as part of the Set Exercises assessment. The bonus exercise is optional but completing it opens up the possibility of achieving a grade in the higher mark boundaries.
 
