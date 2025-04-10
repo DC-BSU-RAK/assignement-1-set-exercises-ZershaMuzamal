@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f4fb;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #e91e63, #ff80ab);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.more-bar {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e91e63;
+    border-top: 2px solid #ccc;
+}
+
+.more-bar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.more-bar a:hover {
+    color: #8c15e9;
+}
+
+/* Weekly Schedule */
+.weekly-schedule, .tasks {
+    width: 80%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.weekly-schedule h2, .tasks h2 {
+    background: #e91e63;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Session Boxes */
+.sessions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.session {
+    background: #ff80ab;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+    color: white;
+}
+
+.tag {
+    display: block;
+    background: #880e4f;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Task List */
+.tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tasks ul li {
+    background: #ffe0e5;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.tasks ul li span {
+    float: right;
+    color: #e91e63;
+    font-weight: bold;
+}
+
+/* Task Priorities */
+.priority {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.high-priority .priority {
+    background: rgb(249, 134, 134);
+}
+
+.medium-priority .priority {
+    background: orange;
+}
+
+.low-priority .priority {
+    background: rgb(143, 255, 143);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 80%;
+    background: #ff4081;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #e91e63, #ff80ab);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
