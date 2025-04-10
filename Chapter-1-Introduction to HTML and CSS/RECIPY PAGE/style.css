@@ -6,24 +6,28 @@
 }
 /*STYLING THE BODY*/
 body {
-    background-image: url('imagefile/image1.avif');
+    background-image: url('111.avif');
     background-size: cover;
 }
 /* STYLING THE HEADER*/
 header {
-    color: #351c1c;
+    
+    color: #000000;
     text-align: center;
-    padding: 100px 20px;
+    padding: 1px ;
 }
 /*APPLYING THE GOOGLE FONT*/
 .header-content h1, 
 .header-content p {
     font-family: 'Rubik Gemstones', sans-serif; 
-    background: rgba(255, 230, 200, 0.7); 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    background: rgba(255, 255, 255, 0.50);
+    text-shadow:
+    0 0 12px #f7f7f7,
+    0 0 20px #ffffff;
 }
 header h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-bottom: 10px;
 }
 header p {
@@ -40,7 +44,7 @@ header p {
 .description {
     font-family: 'Rubik Gemstones', sans-serif; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: #F5DEB3;
+    background: rgba(255, 255, 255, 0.50);
     margin-top: 20px;
     padding: 20px;
     border-radius: 8px;
@@ -51,18 +55,22 @@ header p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     font-size: 2rem;
     color: #000000;
+    text-shadow:
+  0 0 4px #f7f7f7,
+  0 0 8px #ffffff;
+
 }
 .description p {
-    font-family: 'Rubik Gemstones', sans-serif; 
+    font-family: 'Pacifico', cursive; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     font-size: 1rem;
-    color: #555;
+    color: #000000;
 }
 /*STYLING THE INGREDIENTS SECTION*/
 .ingredients {
     font-family: 'Rubik Gemstones', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    background-color: #F5DEB3;
+    background: rgba(255, 255, 255, 0.50);
     margin-top: 20px;
     padding: 20px;
     border-radius: 8px;
@@ -71,17 +79,21 @@ header p {
 .ingredients h2 {
     font-family: 'Rubik Gemstones', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    font-size: 2rem;
+    font-size: 40px;
     color: #000000;
+    text-shadow:
+    0 0 4px #f7f7f7,
+    0 0 8px #ffffff;
+  
 }
 .ingredients ul {
     list-style: none;
 }
 .ingredients li {
-    font-family: 'Rubik Gemstones', sans-serif; 
+    font-family: 'Pacifico', cursive; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 1rem;
-    color: #555;
+    color: #000000;
     padding-left: 20px;
     position: relative;
 }
@@ -96,45 +108,136 @@ header p {
 .method {
     font-family: 'Rubik Gemstones', sans-serif; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    background-color: #F5DEB3;
+    background: rgba(255, 255, 255, 0.50);
     margin-top: 20px;
+    margin-bottom: 60px; 
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0);
 }
 .method h2 {
     font-family: 'Rubik Gemstones', sans-serif; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 2rem;
     color: #000000;
+    text-shadow:
+    0 0 4px #f7f7f7,
+    0 0 8px #ffffff;
+  
 }
 .method ol {
     padding-left: 20px;
+    font-family: 'Pacifico', cursive; 
 }
 .method li {
-    font-size: 1rem;
-    color: #555;
+    font-size: 2cqb;
+    color: #000000;
     margin-bottom: 10px;
+}
+/* Container Styling */
+.nutrition-container {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 20px;
+    width: 60%;
+    margin-top: 20px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Heading */
+.nutrition-container h2 {
+
+    font-size: 1.8rem;
+    color: #000000;
+    font-family: 'Rubik Gemstones', sans-serif;
+    margin-bottom: 15px;
+}
+/* Table Styling */
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+/* Table Headers */
+.nutrition-table th {
+    background-color: #333; /* Dark header */
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+/* Table Rows */
+.nutrition-table td {
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+/* Alternate Row Colors */
+.nutrition-table tr:nth-child(even) {
+    background-color: #eaeaea; /* Light gray */
+}
+/* Styling for Side Dishes Section */
+.side-dishes-container {
+    background: #fff;
+    padding: 10px;
+    width: 60%;
+    margin: 30px auto;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.side-dishes-container h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Rubik Gemstones', sans-serif;
+    color: #1b1b1b;
+}
+.side-dishes-container h2 span {
+    color: #444; /* Highlight "Spaghetti Carbonara" */
+}
+.side-dishes-list {
+    list-style: none;
+    padding: 40px;
+}
+.side-dishes-list li {
+    color: #555;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+/* Adding space for emoji icons */
+.side-dishes-list li::before {
+    position: absolute;
+    font-size: 1.5rem;
+    left: 0;
 }
 /*STYLING THE FOOTER SECTION*/
 footer {
+    margin-top: 40px;
     background-color: #333;
+    padding: 20px 0;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
 
+}
 footer p {
-    font-size: 1.2rem;
     margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
 footer .social-links a {
-    color: #fff;
-    text-decoration: none;
     margin: 0 10px;
+    color: #fff;
     font-size: 1rem;
+    text-decoration: none;
 }
 
 footer .social-links a:hover {
