@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header, footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #312450;
+  }
+  
+  h1, h2 {
+    margin: 0.5em 0;
+  }
+  
+  .container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    overflow: hidden;
+  }
+  
+  #soundboard-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  .sample-button {
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .sample-button:hover {
+    background-color: #ff6584;
+    color: #000;
+  }
+  
+  .duration {
+    font-size: 0.8em;
+    margin-top: 5px;
+    color: #ccc;
+  }
+  
+  .nav-buttons {
+    margin-top: 20px;
+  }
+  
+  .nav-buttons button {
+    padding: 10px 20px;
+    background-color: #f67280;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #ff4e50;
+  }
+  
+  #tts-section {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #tts-input {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #6c63ff;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  #tts-button {
+    padding: 10px 20px;
+    background-color: #00b894;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #tts-button:hover {
+    background-color: #00cec9;
+  }
+  
