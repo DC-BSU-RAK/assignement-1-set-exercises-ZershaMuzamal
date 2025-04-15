@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RGB Colour Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎨 RGB Colour Guessing Game</h1>
+        <p id="rgbDisplay">Guess this color: <span id="rgbValue">rgb(0, 0, 0)</span></p>
+        
+        <!-- Lives and Score -->
+        <div class="info">
+            <p>Lives: <span id="lives">3</span></p>
+            <p>Score: <span id="score">0</span></p>
+        </div>
+
+        <!-- Color Options -->
+        <div class="color-options" id="colorOptions">
+            <!-- Buttons added dynamically by JS -->
+        </div>
+
+        <!-- Result Message -->
+        <p id="resultMsg"></p>
+
+        <!-- Replay Button -->
+        <button id="replayBtn" class="hidden">Play Again 🔄</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

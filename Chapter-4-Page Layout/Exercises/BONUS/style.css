@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #2e2e2e;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #cfd8dc, #b0bec5); /* soft gray-blues */
+    color: #2e2e2e;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: #2e2e2e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.more-bar {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #b0bec5;
+    border-top: 2px solid #ccc;
+}
+
+.more-bar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2e2e2e;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.more-bar a:hover {
+    color: #607d8b;
+}
+
+/* Weekly Schedule */
+.weekly-schedule, .tasks {
+    width: 80%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.weekly-schedule h2, .tasks h2 {
+    background: #c8e6c9; /* soft green */
+    color: #2e2e2e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Session Boxes */
+.sessions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.session {
+    background: #dcedc8; /* pastel green */
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    width: 30%;
+    color: #2e2e2e;
+}
+
+.tag {
+    display: block;
+    background: #a5d6a7;
+    color: #2e2e2e;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Task List */
+.tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tasks ul li {
+    background: #e0f2f1; /* light teal */
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #2e2e2e;
+}
+
+.tasks ul li span {
+    float: right;
+    color: #00796b;
+    font-weight: bold;
+}
+
+/* Task Priorities */
+.priority {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #2e2e2e;
+}
+
+.high-priority .priority {
+    background: #ffcdd2;
+}
+
+.medium-priority .priority {
+    background: #fff9c4;
+}
+
+.low-priority .priority {
+    background: #c8e6c9;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 80%;
+    background: #cfd8dc;
+    padding: 20px;
+    color: #2e2e2e;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #2e2e2e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #cfd8dc, #b0bec5);
+    color: #2e2e2e;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+

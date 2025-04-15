@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Petrol Price Calculator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Petrol Price Calculator</h1>
+        <div class="wrapper">
+            <div>
+                <label for="Petrol_Price">Petrol Price:</label><br>
+                <input type="number" id="Petrol_Price" placeholder="Enter price per liter">
+            </div>
+            <div>
+                <label for="liters">Liters:</label><br>
+                <input type="number" id="liters" placeholder="Enter liters">
+            </div>
+        </div>
+        <div id="btn">
+            <button>Calculate</button>
+        </div>
+        <div id="totalDisplay">
+            Total Amount: ₹<span id="totalAmount">0.00</span>
+        </div>
+    </div>
+
+    <script>
+        window.onload = () => {
+            const inputs = document.querySelectorAll("input");
+
+            inputs.forEach(input => {
+                input.addEventListener('change', calculate)
+            })
+        }
+
+        function calculate () {
+            const Petrol_Price = document.querySelector('#Petrol_Price').value;
+            const liters = document.querySelector('#liters').value;
+
+            if (!Petrol_Price || !liters) return;
+
+            document.querySelector('#totalAmount').innerText = Petrol_Price * liters;
+        }
+    </script>
+
+</body>
+</html>
