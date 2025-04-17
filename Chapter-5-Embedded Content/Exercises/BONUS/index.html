@@ -3,34 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Comedy Radio Soundboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- Title of the webpage, which appears in the browser tab -->
+  <title>My Stop Motion</title>
+  <!-- Linking an external stylesheet to style the page -->
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- Including Google Fonts for the "Poppins" font family with a font weight of 600 -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Radio LOL Soundboard</h1>
-  </header>
-
+  <!-- Main content of the page wrapped in a container -->
   <main class="container">
-    <section id="soundboard-section">
-      <div id="soundboard" class="grid"></div>
-      <div class="nav-buttons">
-        <button id="prev-btn">← Prev</button>
-        <button id="next-btn">Next →</button>
-      </div>
-    </section>
+    <!-- Heading of the webpage -->
+    <h1>My Stop Motion</h1>
 
-    <aside id="tts-section">
-      <h2>Say Something Funny</h2>
-      <textarea id="tts-input" placeholder="Enter your text..."></textarea>
-      <button id="tts-button">🎙️ Speak</button>
-    </aside>
+    <!-- Video container with specific styling (e.g., custom box, video controls, etc.) -->
+    <div class="video-box">
+      <!-- Video element with controls for play, pause, and volume, set to loop -->
+      <video controls loop poster="POSTER.png">
+        <!-- Source of the video (stop-motion video in mp4 format) -->
+        <source src="STOP MOTION.mp4" type="video/mp4" />
+        <!-- Text in case the browser does not support the video element -->
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </main>
-
+</body>
+</html>
   <footer>
     <p>&copy; 2025 Comedy Radio Show</p>
   </footer>
-
   <script src="index.js"></script>
 </body>
 </html>
