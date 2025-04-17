@@ -2,24 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Image Comparison</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Space Image Comparison</title>  <!-- Page title that will appear on the browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file to style the page -->
 </head>
 <body>
-    <header>
+    <header><!-- Header section containing the main title of the page -->
         <h1>Space Exploration</h1>
     </header>
-    <main>
+    <main><!-- Main content of the page where the image gallery resides -->
         <section class="image-gallery">
-            <!-- Image 1 -->
+            <!-- Section for displaying the first image with and without a filter -->
+            <!-- Image 1 - Original Galaxy -->
             <figure>
                 <img src="space1.avif" alt="Original Galaxy" title="Original Galaxy">
                 <figcaption>
+                    <!-- Caption to describe the image with a source attribution link -->
                     <strong>Original</strong> – Spiral Galaxy<br>
                     Image by Bryan Goff (<a href="https://unsplash.com/license">Unsplash</a>)
                 </figcaption>
             </figure>
+            <!-- Image 1 with a Glow Boost filter applied -->
             <figure>
                 <img src="space1.avif" alt="Glow Boost Filtered Galaxy" class="filter-glow" title="Glow Boost Filter">
                 <figcaption>
@@ -27,7 +30,9 @@
                     Enhanced brightness, contrast & saturation.
                 </figcaption>
             </figure>
-            <!-- Image 2 -->
+            
+            <!-- Section for displaying the second image with and without a filter -->
+            <!-- Image 2 - Original Ringed Planet -->
             <figure>
                 <img src="space2.avif" alt="Original Ringed Planet" title="Original Planet">
                 <figcaption>
@@ -35,6 +40,7 @@
                     Image by NASA (<a href="https://unsplash.com/license">Unsplash</a>)
                 </figcaption>
             </figure>
+            <!-- Image 2 with a Cool Space filter applied -->
             <figure>
                 <img src="space2.avif" alt="Cool Space Filtered Planet" class="filter-cool" title="Cool Space Filter">
                 <figcaption>
@@ -42,7 +48,9 @@
                     Grayscale with a cool hue shift.
                 </figcaption>
             </figure>
-            <!-- Image 3 -->
+            
+            <!-- Section for displaying the third image with and without a filter -->
+            <!-- Image 3 - Original Spacecraft -->
             <figure>
                 <img src="space3.avif" alt="Original Spacecraft" title="Original Spacecraft">
                 <figcaption>
@@ -50,6 +58,7 @@
                     Image by NASA Hubble (<a href="https://unsplash.com/license">Unsplash</a>)
                 </figcaption>
             </figure>
+            <!-- Image 3 with a Retro Heat filter applied -->
             <figure>
                 <img src="space3.avif" alt="Retro Heat Filtered Spacecraft" class="filter-retro" title="Retro Heat Filter">
                 <figcaption>
@@ -59,6 +68,8 @@
             </figure>
         </section>
     </main>
+
+    <!-- Footer section providing copyright and credits information -->
     <footer>
         <p>&copy; 2025 Space Gallery. Created by Your Name. All images used under their respective licenses.</p>
     </footer>
