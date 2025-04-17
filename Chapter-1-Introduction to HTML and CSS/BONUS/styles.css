@@ -1,152 +1,130 @@
 :root {
-    --primary-color: #A5DD9B;
-    --secondary-color: #FFB6C1;
-    --accent-color: #8E8FFA;
-    --text-color: #333;
-    --bg-color: #f9f9f9;
-    --section-bg: #ffffff;
-    --hover-accent: #5A4FCF;
+    --primary-color: #A5DD9B; /* minty green for primary UI elements */
+    --secondary-color: #FFB6C1; /* soft pink, mostly unused after override */
+    --accent-color: #8E8FFA; /* purple-ish tone used in borders etc */
+    --text-color: #333; /* standard dark text color */
+    --bg-color: #f9f9f9; /* light bg for default mode */
+    --section-bg: #ffffff; /* section cards background */
+    --hover-accent: #5A4FCF; /* deeper purple for hover effect */
 }
 
-/* grabbing Inter from google fonts, looks clean & modern */
+/* Load font - Inter gives a clean, modern feel */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-/* Reset n' base styling for everything */
+/* Base styling for entire page */
 body {
-    background-color: var(--bg-color); /* kinda off-white bg */
-    color: var(--text-color); /* default text is dark grey */
-    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color); /* sets the main background */
+    color: var(--text-color); /* default text color */
+    font-family: 'Inter', sans-serif; /* clean sans font */
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased; /* makes text smoother on webkit */
-    -moz-osx-font-smoothing: grayscale; /* same for firefox on mac */
+    -webkit-font-smoothing: antialiased; /* for smoother rendering */
+    -moz-osx-font-smoothing: grayscale; /* same, but for mac/firefox */
 }
 
-/* Oops duplicate body, need to clean later maybe */
+/* Redundant second body block — overrides the first one */
 body {
-    background-color: #1a1a1a; /* dark mode vibes */
-    color: #f0f0f0; /* contrasty text */
-    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* switch to dark background */
+    color: #f0f0f0; /* brighter text for contrast */
+    font-family: Arial, sans-serif; /* overrides Inter — not ideal */
     margin: 0;
 }
 
-/* Header stuff */
+/* Header styles */
 header {
-    background-color: var(--secondary-color); /* will be overridden */
-    padding: 25px;
-    text-align: center;
-    border-bottom: 4px solid #e295aa;
-
-    background-color: #007BFF; /* okay this one actually shows */
-    padding: 20px;
-    border-bottom: 3px solid #0056b3; /* blue border, bit bolder */
+    background-color: #007BFF; /* bright blue used here (overrides pink above) */
+    padding: 20px; /* spacing inside */
+    text-align: center; /* center-align the title */
+    border-bottom: 3px solid #0056b3; /* darker line for emphasis */
 }
 
-/* Main big heading */
+/* Main title */
 h1 {
     text-align: center;
-    color: #3e3e3e; /* darkish gray */
-    font-size: clamp(2rem, 5vw, 3rem); /* responsive sizes */
+    color: #3e3e3e;
+    font-size: clamp(2rem, 5vw, 3rem); /* responsive font size */
     margin: 0;
 }
 
-/* Content section - each chunk/card thing */
-section {
-    padding: 25px;
-    margin: 25px;
-    background-color: var(--section-bg);
-    border-radius: 15px; /* soft corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* light drop shadow */
-    animation: fadeIn 0.6s ease both; /* lil fade in */
-}
-
-/* Sub-headings under each section */
-h2 {
-    text-align: center;
-    color: #5D5FEF;
-    border-bottom: 2px solid #B8B9FF; /* line under heading */
-    padding-bottom: 8px;
-    font-size: clamp(1.5rem, 4vw, 1.9rem);
-}
-
-/* lil overkill on styles but makes h3 pop */
-h3 {
-    color: #6D9886;
-    font-size: 1.6em;
-    color: #fff;
-    font-size: 2.5em; /* this one's big */
-}
-
-/* repeat section? */
+/* Section/card container */
 section {
     padding: 20px;
     margin: 20px;
-    background-color: #2a2a2a; /* dark section bg */
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1); /* light white shadow */
+    background-color: #2a2a2a; /* dark background for sections */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1); /* soft light shadow */
+    animation: fadeIn 0.6s ease both; /* entrance animation */
 }
 
-/* Make h2 stand out more w/ border */
+/* Section subheadings */
 h2 {
     text-align: center;
-    color: #fff;
-    border-bottom: 2px solid #4CAF50; /* green bar, very material */
+    color: #fff; /* white text for contrast */
+    border-bottom: 2px solid #4CAF50; /* green underline */
     padding-bottom: 5px;
     font-size: 1.8em;
 }
 
-/* Each tag or prop thing */
-.tag, .property {
-    background-color: #f0f0ff; /* very light purple-blue */
+/* Smaller section titles */
+h3 {
+    color: #FFEB3B; /* bright yellow for visibility */
+    font-size: 1.5em; /* bold but slightly toned down */
+}
+
+/* Tag/property block */
+.tag,
+.property {
+    background-color: #f0f0ff; /* pale bluish */
     padding: 18px;
     margin: 15px 0;
     border-radius: 8px;
-    border-left: 6px solid var(--accent-color); /* visual cue */
-    transition: all 0.3s ease-in-out; /* smooth on hover */
+    border-left: 6px solid var(--accent-color); /* colored border for identity */
+    transition: all 0.3s ease-in-out; /* nice smooth hover transition */
 }
 
-/* Hover states for above - just darkens it a bit */
-.tag:hover, .property:hover {
-    background-color: #e6e6ff;
-    border-left: 6px solid var(--hover-accent); /* more intense color on hover */
+/* Hover effect on tag blocks */
+.tag:hover,
+.property:hover {
+    background-color: #444; /* darker bg when hovered */
+    border-left: 5px solid #FF9800; /* warmer orange on hover */
 }
 
-/* Blocks for code snippets */
+/* Code block styles */
 pre {
-    background-color: #f5f5f5;
-    padding: 12px;
-    border-radius: 8px;
+    background-color: #222; /* dark background for contrast */
+    padding: 10px;
+    border-radius: 5px;
     overflow-x: auto;
-    border: 1px solid #ddd; /* subtle border */
+    border: 1px solid #444; /* subtle border */
 }
 
 code {
-    color: #d6336c; /* pinkish red */
-    font-family: 'Fira Code', monospace; /* best monospace tbh */
+    color: #f8f8f2; /* light text inside code block */
+    font-family: 'Courier New', monospace; /* classic monospaced look */
 }
 
-/* Button styles - primary action */
+/* Button styles (final version being used) */
 button {
-    background-color: var(--primary-color); /* mint green */
+    background-color: #4CAF50; /* vibrant green btn */
     color: #fff;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease-in-out;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #8CC084; /* hover = lil darker */
+    background-color: #45a049; /* darkens slightly on hover */
 }
 
 button:focus {
-    outline: 3px dashed var(--accent-color); /* accessibility win */
+    outline: 3px dashed var(--accent-color); /* accessibility outline */
     outline-offset: 4px;
 }
 
-/* lil animation on load, slide up slightly */
+/* Entry animation for elements */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -158,82 +136,49 @@ button:focus {
     }
 }
 
-/* Responsive tweaks */
+/* Mobile styling adjustments */
 @media (max-width: 768px) {
     section {
-        margin: 15px 10px;
+        margin: 15px 10px; /* less spacing on small screens */
         padding: 20px;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* downsize title */
     }
 
     button {
-        width: 100%; /* make buttons full width on small screens */
+        width: 100%; /* full width btn for mobile UX */
     }
 }
 
-
-
-/* another h3 style override */
-h3 {
-    color: #FFEB3B; /* yellow titles - bold move */
-    font-size: 1.5em;
-}
-
-/* dark mode code block overrides */
-pre {
-    background-color: #222;
-    padding: 10px;
+/* ⚠️ Broken rule - was left hanging. Let's wrap it properly */
+.card {
+    background-color: #3a3a3a;
+    padding: 15px;
+    margin: 10px 0;
     border-radius: 5px;
-    overflow-x: auto;
-    border: 1px solid #444; /* more contrast */
+    border-left: 5px solid #FF5722; /* standout orange accent */
 }
 
-code {
-    color: #f8f8f2; /* lighter text for code */
-    font-family: 'Courier New', monospace;
-}
-
-/* lil interaction polish */
-.tag:hover, .property:hover {
-    background-color: #444; /* darker bg on hover */
-    border-left: 5px solid #FF9800; /* warmer highlight */
-}
-
-/* another take on button styles - kind of redundant but works */
-button {
-    background-color: #4CAF50; /* green theme */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #45a049; /* hover green */
-}
-
-/* finally... the footer 🍻 */
+/* Footer at the bottom of page */
 footer {
-    background-color: #f4f4f4; /* soft bg */
-    padding: 20px 0; /* space around */
-    text-align: center; /* centered text */
+    background-color: #f4f4f4; /* light gray footer */
+    padding: 20px 0;
+    text-align: center;
     font-size: 0.9rem;
-    color: #333; /* readable dark gray */
-    border-top: 1px solid #ccc; /* top border = footer look */
+    color: #333;
+    border-top: 1px solid #ccc;
     margin-top: 40px;
 }
 
+/* Links inside footer */
 footer a {
     color: #0066cc; /* blue links */
     text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline; /* hover underline, classic */
+    text-decoration: underline; /* underline on hover for clarity */
 }
+
