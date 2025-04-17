@@ -1,101 +1,135 @@
-/* style.css */
+/* Basic styling for the body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Setting a clean, modern font */
+    margin: 0; /* Removing default margin */
+    padding: 0; /* Removing default padding */
 }
-header {
-    background-color: #17072b;
-    color: white;
-    text-align: center;
-    padding: 1%;
-    padding-top: 0%;
-}
-header h1 {
-    font-size: 50px;
-    border-bottom: 4px solid rgb(255, 255, 255);
-    display: inline-block;
-}
-nav ul {
-    list-style: none;
-}
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-    font-size: 20px ;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-main {
-    display: flex;
-    padding: 20px;
-    padding-right: 0%;
-    background-color: white;
-}
-.welcome {
-    flex: 2;
-}
-.welcome h2 {
-    font-weight: bold;
-    font-size: 50px;
 
+/* Styling for the header section */
+header {
+    background-color: #17072b; /* Dark purple background for the header */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center-align the text */
+    padding: 1%; /* Padding around the content */
+    padding-top: 0%; /* Adjust top padding */
 }
+
+/* Styling for the header's main title */
+header h1 {
+    font-size: 50px; /* Large font size for emphasis */
+    border-bottom: 4px solid rgb(255, 255, 255); /* White border beneath the title */
+    display: inline-block; /* Display the title inline with the border */
+}
+
+/* Styling for the navigation menu */
+nav ul {
+    list-style: none; /* Removes default bullet points from the list */
+}
+
+/* Styling for each list item in the navigation */
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin: 0 15px; /* Spacing between navigation items */
+    font-size: 20px; /* Font size for navigation links */
+}
+
+/* Styling for the navigation links */
+nav ul li a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove the underline from the links */
+}
+
+/* Main content area styling */
+main {
+    display: flex; /* Flexbox for side-by-side layout */
+    padding: 20px; /* Padding around the main content */
+    padding-right: 0%; /* Adjust right padding */
+    background-color: white; /* White background for the main content */
+}
+
+/* Styling for the welcome section */
+.welcome {
+    flex: 2; /* Take up 2 parts of the flex container */
+}
+
+/* Heading styling inside the welcome section */
+.welcome h2 {
+    font-weight: bold; /* Bold text for the heading */
+    font-size: 50px; /* Large font size for emphasis */
+}
+
+/* Image styling inside the welcome section */
 .welcome img {
-    width: 100%;
-    max-width: 900px;
-    display: block;
-    margin-top: 20px;
+    width: 100%; /* Make the image take up the full width */
+    max-width: 900px; /* Max width of 900px to prevent image from growing too large */
+    display: block; /* Block-level image to ensure proper layout */
+    margin-top: 20px; /* Margin at the top for spacing */
 }
-.welcome p{
-    font-size: 20px;
+
+/* Styling for the paragraph inside the welcome section */
+.welcome p {
+    font-size: 20px; /* Medium-sized text for the paragraph */
 }
+
+/* Sidebar section styling */
 .sidebar {
-    background-color: #172d67;
-    color: white;
-    padding: 20px;
-    flex: 1;
-    text-align: left;
+    background-color: #172d67; /* Blue background for the sidebar */
+    color: white; /* White text in the sidebar */
+    padding: 20px; /* Padding around the content */
+    flex: 1; /* Sidebar takes up 1 part of the flex container */
+    text-align: left; /* Left-align the text */
 }
-.sidebar h2{
-    font-size: 40px;
-    
+
+/* Heading styling in the sidebar */
+.sidebar h2 {
+    font-size: 40px; /* Larger font size for the sidebar heading */
 }
-.sidebar ul{
-    font-size: 20px;
+
+/* List styling in the sidebar */
+.sidebar ul {
+    font-size: 20px; /* Medium font size for list items */
     list-style-type: none; /* Removes default bullets */
     padding-left: 0; /* Removes default indentation */
 }
+
+/* Styling for individual list items in the sidebar */
 .sidebar ul li {
-    position: relative;
-    padding-left: 20px; /* Creates space for the dash */
-    margin-bottom: 15px; 
+    position: relative; /* Position for custom content before the list item */
+    padding-left: 20px; /* Padding to make space for custom bullet */
+    margin-bottom: 15px; /* Space between list items */
 }
 
+/* Adding a custom dash before each list item in the sidebar */
 .sidebar ul li::before {
-    content: "-"; /* Adds a dash */
-    color: white; /* Matches text color */
+    content: "-"; /* Adds a dash as a bullet */
+    color: white; /* White dash color */
 }
-.lineup-images {
-    display: flex;
-    row-gap: 1px;
-    padding-top: 48px;
 
+/* Styling for images in the lineup section */
+.lineup-images {
+    display: flex; /* Flexbox to align images side by side */
+    row-gap: 1px; /* Small gap between rows of images */
+    padding-top: 48px; /* Padding at the top of the image section */
 }
+
+/* Image styling within the lineup section */
 .lineup-images img {
-    width: 42%;
-    padding-left: 20px;
+    width: 42%; /* Images take up 42% of the width */
+    padding-left: 20px; /* Padding to separate the images */
 }
+
+/* Footer section styling */
 footer {
-    background-color: #8c15e9;
-    color: white;
-    text-align: center;
-    padding: 2px;
-    font-size: 20px;
+    background-color: #8c15e9; /* Purple background for the footer */
+    color: white; /* White text in the footer */
+    text-align: center; /* Center-align the text in the footer */
+    padding: 2px; /* Small padding around the footer */
+    font-size: 20px; /* Font size for the footer text */
 }
+
+/* Styling for the rectangular image in the welcome section */
 .rectangle-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+    width: 100%; /* Full width image */
+    height: 300px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
 }
