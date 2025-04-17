@@ -1,45 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS Quick Reference Guide</title>
-    <link rel="stylesheet" href="styles.css"> 
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> <!-- The header tag -->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>HTML & CSS Quick Reference Guide</title> <!-- Defines the title of the web page -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links the external CSS stylesheet -->
 </head>
-<body>
-    <header>
-        <h1>HTML & CSS Quick Reference Guide</h1>
-        <p>A concise guide to essential HTML tags and CSS properties.</p>
+
+<body> <!-- Main content of the web page -->
+
+    <header> <!-- Page header containing the title and subtitle -->
+        <h1>HTML & CSS Quick Reference Guide</h1> <!-- Primary heading for the page -->
+        <p>A concise guide to essential HTML tags and CSS properties.</p> <!-- Short description of the guide -->
     </header>
     
-    <section class="html-section">
-        <h2>Essential HTML Tags</h2>
+    <section class="html-section"> <!-- Section containing HTML tag references -->
+        <h2>Essential HTML Tags</h2> <!-- Subheading for the HTML section -->
         
-        <div class="tag"><h3>&lt;h1&gt; to &lt;h6&gt; - Headings</h3><p>Defines headings with varying importance.</p><pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;</code></pre></div>
-        <div class="tag"><h3>&lt;p&gt; - Paragraph</h3><p>Defines a block of text.</p><pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre></div>
-        <div class="tag"><h3>&lt;a&gt; - Anchor</h3><p>Creates hyperlinks.</p><pre><code>&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</code></pre></div>
-        <div class="tag"><h3>&lt;img&gt; - Image</h3><p>Embeds images.</p><pre><code>&lt;img src="image.jpg" alt="Image"&gt;</code></pre></div>
-        <div class="tag"><h3>&lt;ul&gt; &amp; &lt;ol&gt; - Lists</h3><p>Creates lists.</p><pre><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></pre></div>
-        <div class="tag"><h3>&lt;table&gt; - Table</h3><p>Displays data.</p><pre><code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></pre></div>
-        <div class="tag"><h3>&lt;form&gt; - Form</h3><p>Creates user input fields.</p><pre><code>&lt;form&gt;&lt;input type="text"&gt;&lt;/form&gt;</code></pre></div>
-        <div class="tag"><h3>&lt;button&gt; - Button</h3><p>Defines clickable buttons.</p><pre><code>&lt;button&gt;Click me&lt;/button&gt;</code></pre></div>
-        <div class="tag"><h3>&lt;div&gt; - Division</h3><p>Groups elements.</p><pre><code>&lt;div&gt;Content&lt;/div&gt;</code></pre></div>
-        <div class="tag"><h3>&lt;span&gt; - Inline Container</h3><p>Styles inline elements.</p><pre><code>&lt;span&gt;Text&lt;/span&gt;</code></pre></div>
+        <div class="tag"> <!-- Description and example of heading tags -->
+            <h3>&lt;h1&gt; to &lt;h6&gt; - Headings</h3>
+            <p>Defines headings with different levels of importance.</p>
+            <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;</code></pre>
+        </div>
+
+        <div class="tag"> <!-- Description and example of the paragraph tag -->
+            <h3>&lt;p&gt; - Paragraph</h3>
+            <p>Defines a block of text as a paragraph.</p>
+            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+        </div>
+
+        <div class="tag"> <!-- Description and example of the anchor tag -->
+            <h3>&lt;a&gt; - Anchor</h3>
+            <p>Creates a hyperlink to another page or resource.</p>
+            <pre><code>&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</code></pre>
+        </div>
+
+        <div class="tag"> <!-- Description and example of the image tag -->
+            <h3>&lt;img&gt; - Image</h3>
+            <p>Embeds an image into the page.</p>
+            <pre><code>&lt;img src="image.jpg" alt="Image"&gt;</code></pre>
+        </div>
+
+        <div class="tag"> <!-- Description and example of unordered and ordered list tags -->
+            <h3>&lt;ul&gt; &amp; &lt;ol&gt; - Lists</h3>
+            <p>Creates unordered and ordered lists.</p>
+            <pre><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></pre>
+        </div>
+
+        <div class="tag"> <!-- Description and example of the table tag -->
+            <h3>&lt;table&gt; - Table</h3>
+            <p>Displays tabular data in rows and columns.</p>
+            <pre><code>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Data&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code></pre>
+        </div>
+
+        <div class="tag"> <!-- Description and example of the form tag -->
+            <h3>&lt;form&gt; - Form</h3>
+            <p>Creates a form to collect user input.</p>
+            <pre><code>&lt;form&gt;&lt;input type="text"&gt;&lt;/form&gt;</code></pre>
+        </div>
+
+        <div class="tag"> <!-- Description and example of the button tag -->
+            <h3>&lt;button&gt; - Button</h3>
+            <p>Defines a clickable button element.</p>
+            <pre><code>&lt;button&gt;Click me&lt;/button&gt;</code></pre>
+        </div>
+
+        <div class="tag"> <!-- Description and example of the div tag -->
+            <h3>&lt;div&gt; - Division</h3>
+            <p>Defines a division or section in the document.</p>
+            <pre><code>&lt;div&gt;Content&lt;/div&gt;</code></pre>
+        </div>
+
+        <div class="tag"> <!-- Description and example of the span tag -->
+            <h3>&lt;span&gt; - Inline Container</h3>
+            <p>Defines a container for inline elements or text styling.</p>
+            <pre><code>&lt;span&gt;Text&lt;/span&gt;</code></pre>
+        </div>
     </section>
 
-    <section class="css-section">
-        <h2>Essential CSS Properties</h2>
-        
-        <div class="property"><h3>color</h3><p>Sets text color.</p><pre><code>p { color: grey; }</code></pre></div>
-        <div class="property"><h3>background-color</h3><p>Sets background.</p><pre><code>body { background-color: black; }</code></pre></div>
-        <div class="property"><h3>font-family</h3><p>Defines text style.</p><pre><code>p { font-family: Arial; }</code></pre></div>
-        <div class="property"><h3>border</h3><p>Adds element borders.</p><pre><code>div { border: 1px solid white; }</code></pre></div>
-        <div class="property"><h3>padding</h3><p>Controls inner spacing.</p><pre><code>div { padding: 10px; }</code></pre></div>
-        <div class="property"><h3>margin</h3><p>Controls outer spacing.</p><pre><code>div { margin: 10px; }</code></pre></div>
-        <div class="property"><h3>width</h3><p>Sets width.</p><pre><code>div { width: 50%; }</code></pre></div>
-        <div class="property"><h3>height</h3><p>Sets height.</p><pre><code>div { height: 100px; }</code></pre></div>
-        <div class="property"><h3>text-align</h3><p>Aligns text.</p><pre><code>p { text-align: center; }</code></pre></div>
-        <div class="property"><h3>display</h3><p>Defines element layout.</p><pre><code>div { display: flex; }</code></pre></div>
+    <section class="css-section"> <!-- Section containing CSS property references -->
+        <h2>Essential CSS Properties</h2> <!-- Subheading for the CSS section -->
+
+        <div class="property"> <!-- Description and example of the color property -->
+            <h3>color</h3>
+            <p>Sets the text color of an element.</p>
+            <pre><code>p { color: grey; }</code></pre>
+        </div>
+
+        <div class="property"> <!-- Description and example of the background-color property -->
+            <h3>background-color</h3>
+            <p>Defines the background color of an element.</p>
+            <pre><code>body { background-color: black; }</code></pre>
+        </div>
+
+        <div class="property"> <!-- Description and example of the font-family property -->
+            <h3>font-family</h3>
+            <p>Specifies the font style for text content.</p>
+            <pre><code>p { font-family: Arial; }</code></pre>
+        </div>
+
+        <div class="property"> <!-- Description and example of the border property -->
+            <h3>border</h3>
+            <p>Applies a border around an element.</p>
+            <pre><code>div { border: 1px solid white; }</code></pre>
+        </div>
+
+        <div class="property"> <!-- Description and example of the padding property -->
+            <h3>padding</h3>
+            <p>Controls the spacing inside an element's border.</p>
+            <pre><code>div { padding: 10px; }</code></pre>
+        </div>
+
+        <div class="property"> <!-- Description and example of the margin property -->
+            <h3>margin</h3>
+            <p>Controls the spacing outside an element's border.</p>
+            <pre><code>div { margin: 10px; }</code></pre>
+        </div>
+
+        <div class="property"> <!-- Description and example of the width property -->
+            <h3>width</h3>
+            <p>Sets the width of an element.</p>
+            <pre><code>div { width: 50%; }</code></pre>
+        </div>
+
+        <div class="property"> <!-- Description and example of the height property -->
+            <h3>height</h3>
+            <p>Sets the height of an element.</p>
+            <pre><code>div { height: 100px; }</code></pre>
+        </div>
+
+        <div class="property"> <!-- Description and example of the text-align property -->
+            <h3>text-align</h3>
+            <p>Aligns the text content within an element.</p>
+            <pre><code>p { text-align: center; }</code></pre>
+        </div>
+
+        <div class="property"> <!-- Description and example of the display property -->
+            <h3>display</h3>
+            <p>Specifies the layout behavior of an element.</p>
+            <pre><code>div { display: flex; }</code></pre>
+        </div>
     </section>
-</body>
-</html
+
+</body> <!-- End of main content -->
+</section>
+
+<footer> <!-- Footer section containing closing remarks or information -->
+    <p>&copy; 2025 HTML & CSS Quick Reference Guide. All rights reserved.</p>
+    <p>For more resources, visit 
+        <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a>.
+    </p>
+</footer>
+
+</body> <!-- End of main content -->
+
+</html> <!-- End of HTML document -->
