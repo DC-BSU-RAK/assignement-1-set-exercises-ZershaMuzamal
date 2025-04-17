@@ -11,40 +11,24 @@
         <h1>Petrol Price Calculator</h1>
         <div class="wrapper">
             <div>
-                <label for="Petrol_Price">Petrol Price:</label><br>
-                <input type="number" id="Petrol_Price" placeholder="Enter price per liter">
+                <label for="Petrol_Price">Petrol Price (₹):</label><br> <!-- Added currency symbol for clarity -->
+                <input type="number" id="Petrol_Price" placeholder="Enter price per liter" min="0" step="0.01">
             </div>
             <div>
                 <label for="liters">Liters:</label><br>
-                <input type="number" id="liters" placeholder="Enter liters">
+                <input type="number" id="liters" placeholder="Enter liters" min="0" step="0.01">
             </div>
         </div>
         <div id="btn">
-            <button>Calculate</button>
+            <button>Calculate</button> <!-- This button now triggers the calculation -->
         </div>
         <div id="totalDisplay">
-            Total Amount: ₹<span id="totalAmount">0.00</span>
+            Total Amount: ₹<span id="totalAmount">0.00</span> <!-- Updated to show 2 decimal points by default -->
         </div>
     </div>
 
-    <script>
-        window.onload = () => {
-            const inputs = document.querySelectorAll("input");
-
-            inputs.forEach(input => {
-                input.addEventListener('change', calculate)
-            })
-        }
-
-        function calculate () {
-            const Petrol_Price = document.querySelector('#Petrol_Price').value;
-            const liters = document.querySelector('#liters').value;
-
-            if (!Petrol_Price || !liters) return;
-
-            document.querySelector('#totalAmount').innerText = Petrol_Price * liters;
-        }
-    </script>
+    <!-- Link to external JS file -->
+    <script src="script.js"></script>
 
 </body>
 </html>
