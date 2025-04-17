@@ -3,89 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="additionalStyle.css"><!-- Linking the external stylesheet where all the magic happens -->
+    <!-- The title that appears on the browser tab -->
     <title>Styled Divs</title>
-    <style>
-        /* General body styling: center the content */
-        body {
-            display: flex; /* Use flexbox to align content */
-            justify-content: center; /* Center the content horizontally */
-            align-items: center; /* Center the content vertically */
-            height: 100vh; /* Set the height to 100% of the viewport */
-            background-color: white; /* White background for the body */
-        }
-
-        /* Container for the boxes: Flexbox layout with a gap between items */
-        .container {
-            display: flex; /* Use flexbox to display child elements inline */
-            gap: 50px; /* Increased gap for more space between the boxes */
-        }
-
-        /* Styling for individual boxes */
-        .box {
-            width: 150px; /* Set the width of each box */
-            height: 150px; /* Set the height of each box */
-            display: flex; /* Use flexbox to align content inside the box */
-            justify-content: center; /* Center the content horizontally within the box */
-            align-items: center; /* Center the content vertically within the box */
-            font-size: 18px; /* Set the font size for the text inside the box */
-            font-weight: bold; /* Make the text bold */
-            background-color: white; /* White background for the box */
-        }
-
-        /* Specific styling for each box with unique borders and box shadows */
-
-        /* Box #A */
-        #A {
-            border: 3px solid purple; /* Purple border around box A */
-            box-shadow: 10px 10px 10px red; /* Red shadow for box A with an offset */
-        }
-
-        /* Box #B */
-        #B {
-            border: 3px solid lime; /* Lime green border around box B */
-            box-shadow: -10px -10px 10px black; /* Black shadow with an opposite offset */
-        }
-
-        /* Box #C */
-        #C {
-            border: 3px solid orange; /* Orange border around box C */
-            box-shadow: 0px 0px 0px 10px blue, 0px 0px 0px 20px red, 0px 0px 0px 30px green; /* Multiple colorful shadows */
-            border-radius: 20px; /* Rounded corners for box C */
-        }
-
-        /* Box #D */
-        #D {
-            border: 3px solid brown; /* Brown border around box D */
-            position: relative; /* Set box D's position relative to its normal position */
-        }
-
-        /* box D - before content */
-        #D::before {
-            content: "div#D"; /* Adds text content to the box before the actual content */
-            position: absolute; /* Position the text absolutely inside the box */
-            top: 0; /* Align the text at the top of the box */
-            left: 0; /* Align the text to the left side of the box */
-            color: black; /* Set text color to black */
-        }
-
-        /*box D - after content */
-        #D::after {
-            content: "div#D"; /* Adds the same text content after the actual content */
-            position: absolute; /* Position the text absolutely inside the box */
-            top: 0px; /* Align the text at the top of the box */
-            left: 3px; /* Slightly offset the text to the right */
-            color: gray; /* Set the text color to gray */
-        }
-    </style>
 </head>
 <body>
-    <!-- Main container to hold the divs -->
+    <!-- Container div that holds all the individual boxes -->
     <div class="container">
-        <!-- Each individual box has a unique ID and displays its name as content -->
-        <div class="box" id="A">div#A</div> <!-- Box A with purple border and red shadow -->
-        <div class="box" id="B">div#B</div> <!-- Box B with lime border and black shadow -->
-        <div class="box" id="C">div#C</div> <!-- Box C with orange border, colorful shadows, and rounded corners -->
-        <div class="box" id="D">div#D</div> <!-- Box D with brown border and additional text using pseudo-elements -->
+        <!-- Box A: Just a simple div with some style -->
+        <div class="box" id="A">div#A</div>
+        <!-- Box B: Another div, similar to the first one but with different styling -->
+        <div class="box" id="B">div#B</div>
+        <!-- Box C: Yet another div, again with different style -->
+        <div class="box" id="C">div#C</div>
+        <!-- Box D: This one has special styling for its text-shadow -->
+        <div class="box" id="D">div#D</div>
     </div>
 </body>
 </html>
