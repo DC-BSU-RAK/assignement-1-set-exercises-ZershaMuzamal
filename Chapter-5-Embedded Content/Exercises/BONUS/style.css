@@ -1,113 +1,64 @@
+/* Base reset to remove default styling */
+* {
+  margin: 0; /* Removes the default margin around all elements */
+  padding: 0; /* Removes default padding */
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* Body Styling */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #1f1c2c, #928dab);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
-  header, footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #312450;
-  }
-  
-  h1, h2 {
-    margin: 0.5em 0;
-  }
-  
-  .container {
-    display: flex;
-    flex: 1;
-    padding: 20px;
-    gap: 20px;
-    overflow: hidden;
-  }
-  
-  #soundboard-section {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-  }
-  
-  .sample-button {
-    background-color: #6c63ff;
-    border: none;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    font-size: 1.1em;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .sample-button:hover {
-    background-color: #ff6584;
-    color: #000;
-  }
-  
-  .duration {
-    font-size: 0.8em;
-    margin-top: 5px;
-    color: #ccc;
-  }
-  
-  .nav-buttons {
-    margin-top: 20px;
-  }
-  
-  .nav-buttons button {
-    padding: 10px 20px;
-    background-color: #f67280;
-    border: none;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 0 10px;
-    transition: background 0.3s ease;
-  }
-  
-  .nav-buttons button:hover {
-    background-color: #ff4e50;
-  }
-  
-  #tts-section {
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  #tts-input {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    border: 2px solid #6c63ff;
-    border-radius: 8px;
-    font-size: 1em;
-    margin-bottom: 10px;
-  }
-  
-  #tts-button {
-    padding: 10px 20px;
-    background-color: #00b894;
-    border: none;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  #tts-button:hover {
-    background-color: #00cec9;
-  }
-  
+  height: 100vh; /* Sets the body height to 100% of the viewport height */
+  font-family: 'Press Start 2P', cursive; /* Uses a retro-style pixelated font */
+  background: #f5f7fa; /* Light grayish background color */
+  display: flex; /* Makes the body a flex container */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  color: #222; /* Sets the text color to a dark gray */
+}
+
+/* Container Styling */
+.container {
+  text-align: center; /* Centers the text inside the container */
+  padding: 30px; /* Adds padding around the content */
+  background-color: #826e6e; /* Gives the container a muted brownish color */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
+  max-width: 900px; /* Limits the container's width to 900px */
+  width: 90%; /* Sets the container to take up 90% of the viewport width */
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2.5rem; /* Large font size for the heading */
+  margin-bottom: 25px; /* Adds space below the heading */
+  color: #ffffff; /* Sets the heading color to white */
+  letter-spacing: 1px; /* Adds a slight spacing between letters for a stylish look */
+}
+
+/* Video Box Styling */
+.video-box video {
+  width: 100%; /* Makes the video take up the full width of its container */
+  border-radius: 15px; /* Rounds the corners of the video */
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15); /* Adds a soft shadow to the video */
+  transition: transform 0.3s ease; /* Smooth transition when the video is hovered */
+}
+
+/* Body Styling (Gradient Background Animation) */
+body {
+  height: 100vh; /* Full height of the viewport */
+  font-family: 'Rock Salt', cursive; /* A fun, cursive font */
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb); /* Gradient background with soft pastel colors */
+  background-size: 400% 400%; /* Makes the background gradient larger than the viewport */
+  animation: gradientBG 12s ease infinite; /* Creates a smooth gradient animation over 12 seconds */
+  display: flex; /* Flex container */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  color: #222; /* Text color set to dark gray */
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; } /* Starts the gradient at the left */
+  50% { background-position: 100% 50%; } /* Moves the gradient to the right */
+  100% { background-position: 0% 50%; } /* Returns the gradient to the starting position */
+}
