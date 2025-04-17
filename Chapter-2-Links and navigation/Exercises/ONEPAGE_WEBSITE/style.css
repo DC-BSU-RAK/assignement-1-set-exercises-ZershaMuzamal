@@ -1,27 +1,22 @@
-
-/* Base Styles */
-body {
-    background-color: #121212;
-    font-family:'Creepster', cursive;
-    margin: 0;
-    padding: 0;
-    color: #f0f0f0;
-}
-
-/* Navigation Bar */
-nav {
-    font-family: 'Creepster', cursive;
-    background-color: #1a1a1a;
-    padding: 20px 0;
-}
+/* ====== Base Styles ====== */
+/* Sets the default font and background gradient for the entire page */
 body {
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #985dff, #000000);
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #ffffff;
 }
 
+/* Applies a decorative heading font to section titles and the footer */
+.section-title,
+.review-title,
+footer {
+    font-family: 'Creepster', cursive;
+}
+
+/* ====== Navigation Bar ====== */
+/* Styles the fixed navigation bar at the top of the page */
 nav {
     background-color: #673ab7;
     padding: 15px 0;
@@ -33,19 +28,22 @@ nav {
     z-index: 1000;
 }
 
+/* Removes default list styling from the navigation menu */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* Aligns navigation items horizontally with spacing */
 nav ul li {
     display: inline-block;
-    margin: 0 25px;
+    margin: 0 20px;
 }
 
+/* Styles the navigation links and applies hover interaction */
 nav ul li a {
-    color: #bb86fc;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -53,15 +51,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #e0aaff;
+    color: #bb86fc;
 }
 
-/* Category Box Wrapper */
+/* ====== Category Box (Section Wrapper) ====== */
+/* Defines the layout and appearance of content containers */
 .category-box {
-    border: 2px solid rgba(103, 58, 183, 0.7);
     border-radius: 20px;
-    padding: 50px 35px;
-    margin: 120px auto 60px; /* accounts for fixed nav */
+    padding: 60px 35px;
+    margin: 120px auto 60px;
     max-width: 1000px;
     background: linear-gradient(
         145deg,
@@ -72,12 +70,23 @@ nav ul li a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Applies an alternating background style to enhance section contrast */
+.category-box:nth-child(even) {
+    background: linear-gradient(
+        145deg,
+        rgba(0, 0, 0, 0.1),
+        rgba(103, 58, 183, 0.05)
+    );
+}
+
+/* Adds hover effect to emphasize interactivity */
 .category-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 40px rgba(103, 58, 183, 0.5);
 }
 
-/* Section Titles */
+/* ====== Section Titles ====== */
+/* Styles titles to be centered, bold, and visually distinct */
 .section-title,
 .review-title {
     text-align: center;
@@ -92,112 +101,34 @@ nav ul li a:hover {
     text-shadow: 2px 2px 6px #000;
 }
 
-/* Paragraphs */
-.main-paragraph,
-.review-paragraph {
-    font-size: 20px;
+/* ====== Paragraphs ====== */
+/* Enhances paragraph readability with styled containers and clear contrast */
+p {
+    font-size: 18px;
     line-height: 1.8;
     margin: 20px auto;
-    padding: 25px;
+    padding: 20px;
     max-width: 900px;
     background-color: rgba(243, 229, 245, 0.92);
     border-radius: 14px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
     color: #1c1c1c;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.main-paragraph:hover,
-.review-paragraph:hover {
-    background-color: rgba(243, 229, 245, 1);
-    transform: translateY(-3px);
-}
-
-/* Review Specific Styles */
-.review-title {
-    font-family: 'Creepster', cursive;
-    font-size: 38px;
-}
-
-.review-author {
-    font-family: 'Creepster', cursive;
+/* ====== Footer ====== */
+/* Defines the footer appearance and positions it at the bottom */
+footer {
     text-align: center;
+    padding: 15px;
+    background-color: #222;
     color: #fff;
-    font-size: 24px;
-    margin-top: 30px;
-    background-color: rgba(103, 58, 183, 0.75);
-    padding: 12px 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(103, 58, 183, 0.4);
-}
-
-/* Responsive Touches */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .category-box {
-        margin: 100px 20px 40px;
-        padding: 30px 20px;
-    }
-
-    .main-paragraph,
-    .review-paragraph {
-        padding: 20px;
-    }
-
-    .section-title,
-    .review-title {
-        font-size: 32px;
-        padding: 15px 20px;
-    }
-}
-footer {
-    font-family: 'Creepster', cursive;
-    text-align: center;
-    padding: 10px;
-    background-color: #222;
-    position: left;
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #bb86fc;
-}
-
-header {
-    text-align: center;
-    padding: 120px 20px 50px;
-}
-
-section {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #673ab7;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
+/* ====== Button Styling ====== */
+/* Styles call-to-action buttons with hover effects */
 .button {
     display: inline-block;
     background-color: #bb86fc;
@@ -211,4 +142,41 @@ footer {
 
 .button:hover {
     background-color: #985dff;
+}
+
+/* ====== Section Divider ====== */
+/* Provides a visual divider between sections for clarity */
+hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 40px auto;
+    width: 80%;
+}
+
+/* ====== Responsive Design ====== */
+/* Adjusts layout and typography for improved usability on smaller screens */
+@media (max-width: 768px) {
+    /* Stacks navigation links vertically for mobile screens */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Reduces margins and padding for better spacing on mobile devices */
+    .category-box {
+        margin: 100px 20px 40px;
+        padding: 30px 20px;
+    }
+
+    /* Decreases font size for section titles on smaller screens */
+    .section-title,
+    .review-title {
+        font-size: 32px;
+        padding: 15px 20px;
+    }
+
+    /* Adjusts paragraph padding for compact display */
+    p {
+        padding: 15px;
+    }
 }
