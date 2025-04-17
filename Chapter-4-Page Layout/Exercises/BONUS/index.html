@@ -3,48 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title displayed on the browser tab -->
     <title>Weekly Planner</title>
+    <!-- Linking the external CSS stylesheet for styling and design -->
     <link rel="stylesheet" href="style.css">
+    <!-- Smooth scrolling effect for page navigation -->
     <style>
-        /* Smooth Scrolling */
         html {
-            scroll-behavior: smooth;
+            scroll-behavior: smooth; /* Smooth scroll effect when clicking links */
         }
     </style>
 </head>
 <body>
+    <!-- Header section with the main title and navigation menu -->
     <header>
-        <h1><strong>Weekly Planner 📅</strong></h1>
+        <!-- Main heading for the page, with a calendar emoji for visual flair -->
+        <h1><strong>Weekly Planner 📅</strong></h1>        
+        <!-- Navigation menu with links to different sections of the page -->
         <nav>
             <ul>
-                <li><a href="#index.html">Home</a></li>
-                <li><a href="#weekly-schedule">Schedule</a></li>
-                <li><a href="#tasks">Tasks</a></li>
-                <li><a href="#sidebar">Resources</a></li>
+                <li><a href="#index.html">Home</a></li> <!-- Link to Home -->
+                <li><a href="#weekly-schedule">Schedule</a></li> <!-- Link to Weekly Schedule -->
+                <li><a href="#tasks">Tasks</a></li> <!-- Link to Tasks section -->
+                <li><a href="#sidebar">Resources</a></li> <!-- Link to Resources sidebar -->
             </ul>
         </nav>
     </header>
-
-    <main>
+    <!-- Main content section -->
+    <main>        
+        <!-- Weekly schedule section, showcasing the weekly sessions -->
         <section class="weekly-schedule" id="weekly-schedule">
-            <h2>Week 6 Schedule</h2>
-            <div class="sessions top">
+            <!-- Subheading for the weekly schedule -->
+            <h2>Week 6 Schedule</h2>           
+            <!-- Grouping sessions for the top part of the week -->
+            <div class="sessions top">                
+                <!-- Monday session -->
                 <div class="session">
                     <h3>Monday</h3>
                     <p><strong>Project Planning</strong></p>
                     <p>🕒 Time: 10:00 AM - 11:30 AM</p>
                     <p>📍 Location: Room 201</p>
                     <span class="tag meeting">Meeting</span>
-                </div>
-        
+                </div>       
+                <!-- Tuesday session -->
                 <div class="session">
                     <h3>Tuesday</h3>
                     <p><strong>Team Collaboration</strong></p>
                     <p>🕒 Time: 1:00 PM - 3:00 PM</p>
                     <p>📍 Location: Conference Room A</p>
                     <span class="tag brainstorming">Brainstorming</span>
-                </div>
-        
+                </div>      
+                <!-- Wednesday session -->
                 <div class="session">
                     <h3>Wednesday</h3>
                     <p><strong>Code Review & Debugging</strong></p>
@@ -52,25 +61,26 @@
                     <p>📍 Location: Lab 3</p>
                     <span class="tag workshop">Workshop</span>
                 </div>
-            </div>
-        
-            <div class="sessions bottom">
+            </div>   
+            <!-- Grouping sessions for the bottom part of the week -->
+            <div class="sessions bottom">            
+                <!-- Thursday session -->
                 <div class="session">
                     <h3>Thursday</h3>
                     <p><strong>Client Meeting</strong></p>
                     <p>🕒 Time: 11:00 AM - 12:30 PM</p>
                     <p>📍 Location: Online (Zoom)</p>
                     <span class="tag client-meeting">Client Meeting</span>
-                </div>
-        
+                </div>      
+                <!-- Friday session -->
                 <div class="session">
                     <h3>Friday</h3>
                     <p><strong>Final Submission</strong></p>
                     <p>🕒 Time: 11:59 PM</p>
                     <p>📍 Online Submission</p>
                     <span class="tag deadline">Deadline</span>
-                </div>
-        
+                </div>     
+                <!-- Saturday session -->
                 <div class="session">
                     <h3>Saturday</h3>
                     <p><strong>Project Retrospective</strong></p>
@@ -78,28 +88,42 @@
                     <p>📍 Location: Office Lounge</p>
                     <span class="tag reflection">Reflection</span>
                 </div>
-            </div>
+            </div>     
+            <!-- Link to see more sessions if needed -->
             <div class="more-bar">
                 <a href="#more-sessions">+ See More</a>
             </div>
-        </section>
-        
-        
-
+        </section>      
+        <!-- Tasks section to display upcoming tasks -->
         <section class="tasks" id="tasks">
-            <h2>Upcoming Tasks</h2>
+            <!-- Subheading for tasks -->
+            <h2>Upcoming Tasks</h2>        
+            <!-- List of tasks with priority levels -->
             <ul>
-                <li class="high-priority">Complete UI Design <span>📅 Today, 11:59 PM</span> <span class="priority">High Priority</span></li>
-                <li class="medium-priority">Fix Bugs in API <span>📅 April 7, 2025</span> <span class="priority">Medium Priority</span></li>
-                <li class="low-priority">Write Documentation <span>📅 April 10, 2025</span> <span class="priority">Low Priority</span></li>
-                <li class="high-priority">Review Pull Requests <span>📅 April 6, 2025</span> <span class="priority">High Priority</span></li>
-                <li class="medium-priority">Update Dependencies <span>📅 April 8, 2025</span> <span class="priority">Medium Priority</span></li>
-                <li class="low-priority">Organize Codebase <span>📅 April 12, 2025</span> <span class="priority">Low Priority</span></li>
+                <!-- High priority task -->
+                <li class="high-priority">Complete UI Design <span>📅 Today, 11:59 PM</span> 
+                    <span class="priority">High Priority</span></li>      
+                <!-- Medium priority task -->
+                <li class="medium-priority">Fix Bugs in API <span>📅 April 7, 2025</span> 
+                    <span class="priority">Medium Priority</span></li>           
+                <!-- Low priority task -->
+                <li class="low-priority">Write Documentation <span>📅 April 10, 2025</span> 
+                    <span class="priority">Low Priority</span></li>           
+                <!-- High priority task -->
+                <li class="high-priority">Review Pull Requests <span>📅 April 6, 2025</span> <span class="priority">High Priority</span></li>            
+                <!-- Medium priority task -->
+                <li class="medium-priority">Update Dependencies <span>📅 April 8, 2025</span>
+                     <span class="priority">Medium Priority</span></li>          
+                <!-- Low priority task -->
+                <li class="low-priority">Organize Codebase <span>📅 April 12, 2025</span> 
+                    <span class="priority">Low Priority</span></li>
             </ul>   
         </section>
-
+        <!-- Sidebar section with links to additional resources -->
         <aside class="sidebar" id="sidebar">
-            <h2>Resources</h2>
+            <!-- Subheading for resources -->
+            <h2>Resources</h2>   
+            <!-- List of resources available -->
             <ul>
                 <li>Tutorials</li>
                 <li>Code Snippets</li>
@@ -108,8 +132,9 @@
             </ul>
         </aside>
     </main>
-
+    <!-- Footer section with copyright information -->
     <footer>
+        <!-- Copyright notice for the planner -->
         <p>&copy; 2025 Weekly Planner - Designed for Productivity</p>
     </footer>
 </body>
