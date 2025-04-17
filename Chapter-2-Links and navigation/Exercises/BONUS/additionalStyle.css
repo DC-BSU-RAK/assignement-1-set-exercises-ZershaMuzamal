@@ -1,14 +1,18 @@
+/* ========== Base Styles ========== */
+/* Sets the main font, background image, and base text color for the entire page */
 body {
     font-family: 'Creepster', cursive;
     margin: 0;
     padding: 0;
-    background-image: url('back\ 1.jpg');
-    background-size: cover; /* Optional: makes the image cover the whole area */
-    background-position: center; /* Optional: centers the image */
-    width: 100%; /* Full width */
+    background-image: url('back 1.jpg');
+    background-size: cover;           /* Ensures background image covers entire screen */
+    background-position: center;      /* Centers the image for consistent visual appearance */
+    width: 100%;
     color: #ffffff;
 }
- 
+
+/* ========== Navigation Bar ========== */
+/* Defines styling for the fixed top navigation bar */
 nav {
     font-family: 'Creepster', cursive;
     background-color: #222;
@@ -18,20 +22,23 @@ nav {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000; /* Ensures navbar appears above all other content */
 }
 
+/* Removes default list styles from the navigation menu */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* Displays navigation items inline with spacing */
 nav ul li {
     display: inline;
     margin: 0 20px;
 }
 
+/* Styles navigation links with hover transition */
 nav ul li a {
     color: #bb86fc;
     text-decoration: none;
@@ -39,16 +46,21 @@ nav ul li a {
     transition: color 0.3s;
 }
 
+/* Maintains hover color for consistency */
 nav ul li a:hover {
     color: #bb86fc;
 }
 
+/* ========== Header Section ========== */
+/* Styles the top section of the page including main heading */
 header {
     font-family: 'Creepster', cursive;
     text-align: center;
-    padding: 120px 20px 50px;
+    padding: 120px 20px 50px; /* Adjusted padding for spacing below navbar */
 }
 
+/* ========== Content Sections ========== */
+/* Applies a styled card-like container for main content */
 section {
     max-width: 800px;
     margin: 40px auto;
@@ -58,6 +70,8 @@ section {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
+/* ========== Footer ========== */
+/* Styles the footer to match the navbar and position it at the bottom */
 footer {
     font-family: 'Creepster', cursive;
     text-align: center;
@@ -68,6 +82,8 @@ footer {
     width: 100%;
 }
 
+/* ========== Buttons ========== */
+/* Defines appearance of interactive buttons across the site */
 .button {
     font-family: 'Creepster', cursive;
     display: inline-block;
@@ -77,9 +93,10 @@ footer {
     text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
     background-color: #985dff;
 }
+
