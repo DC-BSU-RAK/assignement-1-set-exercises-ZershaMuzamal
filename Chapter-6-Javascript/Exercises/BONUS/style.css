@@ -1,87 +1,86 @@
-/* Reset and base styling */
+/* ===== Reset and Base Layout Styles ===== */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #1e1e1e, #2c3e50); /* 🌌 smooth dark gradient */
+    font-family: 'Segoe UI', sans-serif; /* Clean and modern font */
+    background: linear-gradient(135deg, #1e1e1e, #2c3e50); /* 🌌 Smooth dark gradient for visual appeal */
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Make body take full height of the viewport */
 }
 
-/* Main game container */
+/* ===== Main Game Container Styling ===== */
 .game-container {
-    background-color: #2a2a2a;
+    background-color: #2a2a2a; /* Dark background to emphasize colors */
     padding: 30px;
-    border-radius: 16px;
+    border-radius: 16px; /* Rounded corners for modern UI feel */
     text-align: center;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Soft glow for depth */
     width: 90%;
-    max-width: 500px;
+    max-width: 500px; /* Responsive width */
 }
 
-/* RGB display */
+/* ===== RGB Value Display Styling ===== */
 #rgbValue {
     font-weight: bold;
-    color: #f1c40f;
+    color: #f1c40f; /* Bright yellow for visibility and contrast */
 }
 
-/* Info display */
+/* ===== Info Display: Lives and Score ===== */
 .info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Space out the lives and score */
     margin: 20px 0;
 }
 
-/* Color options layout */
+/* ===== Layout for Color Choice Buttons ===== */
 .color-options {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+    gap: 15px; /* Space between buttons */
     margin-bottom: 20px;
 }
 
-/* Each color button */
+/* ===== Styling for Individual Color Buttons ===== */
 .color-btn {
     width: 100%;
-    padding-top: 100%; /* makes it a square */
+    padding-top: 100%; /* Makes the button a perfect square */
     border: none;
-    border-radius: 12px;
+    border-radius: 12px; /* Rounded edges */
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease; /* Smooth hover effect */
 }
 
 .color-btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
-/* Result message */
+/* ===== Result Feedback Message ===== */
 #resultMsg {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0;
 }
 
-/* Replay button */
+/* ===== Styling for the Replay Button ===== */
 #replayBtn {
-    background-color: #3498db;
+    background-color: #3498db; /* Friendly blue tone */
     color: #fff;
     padding: 12px 24px;
     font-size: 16px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
 }
 
 #replayBtn:hover {
-    background-color: #1abc9c;
+    background-color: #1abc9c; /* Softer greenish tone on hover */
 }
 
-/* Hide element */
+/* ===== Utility Class to Hide Elements ===== */
 .hidden {
-    display: none;
+    display: none; /* Used to hide elements like replay button initially */
 }
-
