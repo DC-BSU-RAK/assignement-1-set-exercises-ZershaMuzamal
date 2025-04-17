@@ -1,64 +1,128 @@
-/* Base reset to remove default styling */
-* {
-  margin: 0; /* Removes the default margin around all elements */
-  padding: 0; /* Removes default padding */
-  box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
-}
-
-/* Body Styling */
+/* General body styling */
 body {
-  height: 100vh; /* Sets the body height to 100% of the viewport height */
-  font-family: 'Press Start 2P', cursive; /* Uses a retro-style pixelated font */
-  background: #f5f7fa; /* Light grayish background color */
-  display: flex; /* Makes the body a flex container */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  color: #222; /* Sets the text color to a dark gray */
+  margin: 0; /* Remove default margin for a clean slate */
+  font-family: 'Segoe UI', sans-serif; /* Using a clean and modern font */
+  background: linear-gradient(to right, #1f1c2c, #928dab); /* Stylish background gradient */
+  color: #fff; /* White text for contrast */
+  display: flex; /* Using flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  height: 100vh; /* Full viewport height */
 }
 
-/* Container Styling */
+/* Header and Footer styling */
+header, footer {
+  text-align: center; /* Center the text in the header/footer */
+  padding: 15px; /* Add space around text */
+  background-color: #312450; /* Deep color for header/footer for contrast */
+}
+
+/* Styling for main headings */
+h1, h2 {
+  margin: 0.5em 0; /* Provide margin around headings for spacing */
+}
+
+/* Container holding the soundboard and TTS section */
 .container {
-  text-align: center; /* Centers the text inside the container */
-  padding: 30px; /* Adds padding around the content */
-  background-color: #826e6e; /* Gives the container a muted brownish color */
-  border-radius: 20px; /* Rounded corners */
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
-  max-width: 900px; /* Limits the container's width to 900px */
-  width: 90%; /* Sets the container to take up 90% of the viewport width */
+  display: flex; /* Use flexbox to lay out items side by side */
+  flex: 1; /* Make sure the container stretches to fill available space */
+  padding: 20px; /* Space around the container */
+  gap: 20px; /* Add spacing between sections */
+  overflow: hidden; /* Hide any overflow content */
 }
 
-/* Header Styling */
-h1 {
-  font-size: 2.5rem; /* Large font size for the heading */
-  margin-bottom: 25px; /* Adds space below the heading */
-  color: #ffffff; /* Sets the heading color to white */
-  letter-spacing: 1px; /* Adds a slight spacing between letters for a stylish look */
+/* Soundboard section styling */
+#soundboard-section {
+  flex: 2; /* Give soundboard more space */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Arrange soundboard items in a column */
+  align-items: center; /* Center the content */
 }
 
-/* Video Box Styling */
-.video-box video {
-  width: 100%; /* Makes the video take up the full width of its container */
-  border-radius: 15px; /* Rounds the corners of the video */
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15); /* Adds a soft shadow to the video */
-  transition: transform 0.3s ease; /* Smooth transition when the video is hovered */
+/* Grid layout for the sample buttons */
+.grid {
+  display: grid; /* Use grid for button arrangement */
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+  gap: 15px; /* Add space between the buttons */
 }
 
-/* Body Styling (Gradient Background Animation) */
-body {
-  height: 100vh; /* Full height of the viewport */
-  font-family: 'Rock Salt', cursive; /* A fun, cursive font */
-  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb); /* Gradient background with soft pastel colors */
-  background-size: 400% 400%; /* Makes the background gradient larger than the viewport */
-  animation: gradientBG 12s ease infinite; /* Creates a smooth gradient animation over 12 seconds */
-  display: flex; /* Flex container */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  color: #222; /* Text color set to dark gray */
+/* Individual sound button styling */
+.sample-button {
+  background-color: #6c63ff; /* Purple background color */
+  border: none; /* Remove the default border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add padding inside buttons */
+  text-align: center; /* Center the text inside the button */
+  font-size: 1.1em; /* Slightly larger text for better readability */
+  color: #fff; /* White text */
+  cursor: pointer; /* Show a pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
-/* Keyframes for Gradient Animation */
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; } /* Starts the gradient at the left */
-  50% { background-position: 100% 50%; } /* Moves the gradient to the right */
-  100% { background-position: 0% 50%; } /* Returns the gradient to the starting position */
+/* Hover effect for the sample buttons */
+.sample-button:hover {
+  background-color: #ff6584; /* Change to pinkish color when hovered */
+  color: #000; /* Change text color to black on hover for contrast */
+}
+
+/* Duration text that shows how long the sound is */
+.duration {
+  font-size: 0.8em; /* Smaller font size for the duration text */
+  margin-top: 5px; /* Space above the duration */
+  color: #ccc; /* Light gray color for the duration */
+}
+
+/* Navigation buttons container (Prev and Next buttons) */
+.nav-buttons {
+  margin-top: 20px; /* Add space between the soundboard and navigation buttons */
+}
+
+/* Styling for the navigation buttons (Prev/Next) */
+.nav-buttons button {
+  padding: 10px 20px; /* Add padding to the buttons */
+  background-color: #f67280; /* Soft pink color for the buttons */
+  border: none; /* Remove default border */
+  color: white; /* White text */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 0 10px; /* Add horizontal space between buttons */
+  transition: background 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover effect for navigation buttons */
+.nav-buttons button:hover {
+  background-color: #ff4e50; /* Change color to a deeper red-pink on hover */
+}
+
+/* Text-to-speech (TTS) section styling */
+#tts-section {
+  flex: 1; /* Make TTS section take equal space */
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background for TTS section */
+  padding: 20px; /* Add padding inside the section */
+  border-radius: 10px; /* Round the corners of the section */
+}
+
+/* Input field for entering text to be spoken by TTS */
+#tts-input {
+  width: 100%; /* Make the input take full width of its container */
+  height: 100px; /* Set height for the text area */
+  padding: 10px; /* Add padding inside the input */
+  border: 2px solid #6c63ff; /* Border color matching the theme */
+  border-radius: 8px; /* Rounded corners for the input field */
+  font-size: 1em; /* Default font size */
+  margin-bottom: 10px; /* Space below the input */
+}
+
+/* Button for triggering text-to-speech (TTS) functionality */
+#tts-button {
+  padding: 10px 20px; /* Add padding to the button */
+  background-color: #00b894; /* Greenish color for the button */
+  border: none; /* Remove default border */
+  color: white; /* White text */
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for TTS button */
+#tts-button:hover {
+  background-color: #00cec9; /* Lighter green when hovered */
 }
