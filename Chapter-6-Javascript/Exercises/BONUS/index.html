@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character set declaration to ensure proper encoding -->
     <meta charset="UTF-8">
-    <title>RGB Colour Guessing Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>RGB Colour Guessing Game</title> <!-- Page title displayed in the browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- External link to CSS file for styling -->
 </head>
 <body>
+    <!-- Main game container to center and organize the game elements -->
     <div class="game-container">
+        <!-- Title of the game with an emoji for visual appeal -->
         <h1>🎨 RGB Colour Guessing Game</h1>
-        <p id="rgbDisplay">Guess this color: <span id="rgbValue">rgb(0, 0, 0)</span></p>
-        
-        <!-- Lives and Score -->
+
+        <!-- Instruction to the user: Display the RGB color value to guess -->
+        <p id="rgbDisplay">
+            Guess this color: <span id="rgbValue">rgb(0, 0, 0)</span>
+        </p>
+
+        <!-- Information section displaying the player's lives and score -->
         <div class="info">
-            <p>Lives: <span id="lives">3</span></p>
-            <p>Score: <span id="score">0</span></p>
+            <p>Lives: <span id="lives">3</span></p> <!-- Lives left for the player -->
+            <p>Score: <span id="score">0</span></p> <!-- Current score of the player -->
         </div>
 
-        <!-- Color Options -->
+        <!-- Color options will be displayed dynamically by the JavaScript -->
         <div class="color-options" id="colorOptions">
-            <!-- Buttons added dynamically by JS -->
+            <!-- Buttons for color choices will be generated here via JavaScript -->
         </div>
 
-        <!-- Result Message -->
+        <!-- Display message that informs the user if they guessed correctly or not -->
         <p id="resultMsg"></p>
 
-        <!-- Replay Button -->
+        <!-- Replay button hidden initially, shown when the game ends, for restarting the game -->
         <button id="replayBtn" class="hidden">Play Again 🔄</button>
     </div>
 
+    <!-- External JavaScript file responsible for the game logic -->
     <script src="index.js"></script>
 </body>
 </html>
