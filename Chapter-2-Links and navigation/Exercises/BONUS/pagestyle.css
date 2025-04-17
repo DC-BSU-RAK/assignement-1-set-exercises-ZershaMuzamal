@@ -1,34 +1,34 @@
- 
+/* ============== This CSS stylesheet is for all the lined pages =================*/
 nav {
-    font-family: 'Creepster', cursive;
-    background-color: #222;
-    padding: 15px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    font-family: 'Creepster', cursive; /* Sets the font to 'Creepster', giving it a whimsical, cursive style */
+    background-color: #222; /* Dark background color for the navigation bar */
+    padding: 15px 0; /* Adds padding above and below the navigation bar for spacing */
+    text-align: center; /* Centers the navigation items horizontally */
+    position: fixed; /* Fixes the navigation bar at the top of the page even when scrolling */
+    width: 100%; /* Ensures the navigation bar spans the full width of the page */
+    top: 0; /* Positions the navigation bar at the very top of the page */
+    left: 0; /* Aligns the navigation bar to the left edge of the page */
+    z-index: 1000; /* Ensures the navigation bar is placed above other content (if there's overlap) */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style: none; /* Removes the default list bullets from the navigation list */
+    padding: 0; /* Removes any default padding around the list */
+    margin: 0; /* Removes any default margin around the list */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px;
+    display: inline; /* Makes each list item display horizontally in a row */
+    margin: 0 20px; /* Adds spacing between the list items */
 }
 
 nav ul li a {
-    color: #bb86fc;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: #bb86fc; /* Sets the link color to a light purple */
+    text-decoration: none; /* Removes the underline from the links */
+    font-weight: bold; /* Makes the link text bold for emphasis */
+    transition: color 0.3s; /* Adds a smooth transition effect when the link color changes */
 }
 
 nav ul li a:hover {
-    color: #bb86fc;
+    color: #bb86fc; /* Ensures the color of the link remains the same when hovered */
 }
