@@ -8,7 +8,7 @@
     --hover-accent: #5A4FCF; /* deeper purple for hover effect */
 }
 
-/* Load font - Inter gives a clean, modern feel */
+/* Loading font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 /* Base styling for entire page */
@@ -19,7 +19,7 @@ body {
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased; /* for smoother rendering */
-    -moz-osx-font-smoothing: grayscale; /* same, but for mac/firefox */
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Redundant second body block — overrides the first one */
@@ -32,7 +32,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #007BFF; /* bright blue used here (overrides pink above) */
+    background-color: #007BFF; /* bright blue used here  */
     padding: 20px; /* spacing inside */
     text-align: center; /* center-align the title */
     border-bottom: 3px solid #0056b3; /* darker line for emphasis */
@@ -62,7 +62,7 @@ h2 {
     color: #fff; /* white text for contrast */
     border-bottom: 2px solid #4CAF50; /* green underline */
     padding-bottom: 5px;
-    font-size: 1.8em;
+    font-size: 1.8em; /* font size */
 }
 
 /* Smaller section titles */
@@ -152,7 +152,6 @@ button:focus {
     }
 }
 
-/* ⚠️ Broken rule - was left hanging. Let's wrap it properly */
 .card {
     background-color: #3a3a3a;
     padding: 15px;
