@@ -1,102 +1,117 @@
-
+/* Resetting default styles to ensure consistency across browsers */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*STYLING THE BODY*/
+
+/* ========== BODY STYLING ========== */
+/* Applying a full-screen background image to set a cozy mood */
 body {
     background-image: url('111.avif');
     background-size: cover;
 }
-/* STYLING THE HEADER*/
+
+/* ========== HEADER STYLING ========== */
+/* Center-aligning the header and giving it a bit of breathing space */
 header {
-    
     color: #000000;
     text-align: center;
-    padding: 1px ;
+    padding: 1px;
 }
-/*APPLYING THE GOOGLE FONT*/
+
+/* Applying a decorative Google Font and soft glow for visual appeal */
 .header-content h1, 
 .header-content p {
     font-family: 'Rubik Gemstones', sans-serif; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     background: rgba(255, 255, 255, 0.50);
     text-shadow:
-    0 0 12px #f7f7f7,
-    0 0 20px #ffffff;
+        0 0 12px #f7f7f7,
+        0 0 20px #ffffff;
 }
+
+/* Making the main title nice and big */
 header h1 {
     font-size: 5rem;
     margin-bottom: 10px;
 }
+
+/* Subheading slightly smaller for hierarchy */
 header p {
     font-size: 1.2rem;
 }
-/*THE CONTAINER CLASS FOR CONSISTENT PADDING*/
+
+/* ========== GENERAL CONTAINER ========== */
+/* Used throughout for consistent spacing and layout alignment */
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-/*STYLING THE DESCRIPTION SECTION*/
+
+/* ========== DESCRIPTION SECTION ========== */
+/* Adding a soft background and elegant shadow */
 .description {
-    font-family: 'Rubik Gemstones', sans-serif; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Rubik Gemstones', sans-serif;
     background: rgba(255, 255, 255, 0.50);
     margin-top: 20px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Title styling within description */
 .description h2 {
-    font-family: 'Rubik Gemstones', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     font-size: 2rem;
     color: #000000;
     text-shadow:
-  0 0 4px #f7f7f7,
-  0 0 8px #ffffff;
-
+        0 0 4px #f7f7f7,
+        0 0 8px #ffffff;
 }
+
+/* Paragraph font adds personality with a cursive style */
 .description p {
-    font-family: 'Pacifico', cursive; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-family: 'Pacifico', cursive;
     font-size: 1rem;
     color: #000000;
 }
-/*STYLING THE INGREDIENTS SECTION*/
+
+/* ========== INGREDIENTS SECTION ========== */
+/* Consistent styling with other sections */
 .ingredients {
     font-family: 'Rubik Gemstones', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     background: rgba(255, 255, 255, 0.50);
     margin-top: 20px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Ingredients heading with a glow for readability */
 .ingredients h2 {
-    font-family: 'Rubik Gemstones', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     font-size: 40px;
     color: #000000;
     text-shadow:
-    0 0 4px #f7f7f7,
-    0 0 8px #ffffff;
-  
+        0 0 4px #f7f7f7,
+        0 0 8px #ffffff;
 }
+
+/* Removing default bullet styling */
 .ingredients ul {
     list-style: none;
 }
+
+/* Custom bullet point and spacing */
 .ingredients li {
-    font-family: 'Pacifico', cursive; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Pacifico', cursive;
     font-size: 1rem;
     color: #000000;
     padding-left: 20px;
     position: relative;
 }
+
+/* Decorative bullet style */
 .ingredients li::before {
     content: '\2022';
     color: #E67E22;
@@ -104,85 +119,89 @@ header p {
     left: 0;
     font-size: 1.5rem;
 }
-/*STYLING THE METHOD SECTION*/
+
+/* ========== METHOD SECTION ========== */
 .method {
-    font-family: 'Rubik Gemstones', sans-serif; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-family: 'Rubik Gemstones', sans-serif;
     background: rgba(255, 255, 255, 0.50);
     margin-top: 20px;
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0);
 }
+
+/* Section title with soft glow */
 .method h2 {
-    font-family: 'Rubik Gemstones', sans-serif; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 2rem;
     color: #000000;
     text-shadow:
-    0 0 4px #f7f7f7,
-    0 0 8px #ffffff;
-  
+        0 0 4px #f7f7f7,
+        0 0 8px #ffffff;
 }
+
+/* Ordered list inherits the script font */
 .method ol {
     padding-left: 20px;
-    font-family: 'Pacifico', cursive; 
+    font-family: 'Pacifico', cursive;
 }
+
+/* Steps with spacing and dark text */
 .method li {
     font-size: 2cqb;
     color: #000000;
     margin-bottom: 10px;
 }
-/* Container Styling */
+
+/* ========== NUTRITION TABLE ========== */
 .nutrition-container {
-    background-color: #f5f5f5; /* Light gray background */
+    background-color: #f5f5f5;
     padding: 20px;
     width: 60%;
-    margin-top: 20px;
     margin: 40px auto;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-/* Heading */
-.nutrition-container h2 {
 
+.nutrition-container h2 {
     font-size: 1.8rem;
     color: #000000;
     font-family: 'Rubik Gemstones', sans-serif;
     margin-bottom: 15px;
 }
-/* Table Styling */
+
+/* Table structure and colors */
 .nutrition-table {
     width: 100%;
     border-collapse: collapse;
     background: #fff;
-    margin-top: 15px;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid #000;
 }
-/* Table Headers */
+
 .nutrition-table th {
-    background-color: #333; /* Dark header */
+    background-color: #333;
     color: white;
     padding: 10px;
     font-size: 1rem;
     text-align: center;
 }
-/* Table Rows */
+
 .nutrition-table td {
     padding: 10px;
     font-size: 1rem;
     color: #333;
     border-bottom: 1px solid #ddd;
 }
-/* Alternate Row Colors */
+
+/* Alternating row shades for readability */
 .nutrition-table tr:nth-child(even) {
-    background-color: #eaeaea; /* Light gray */
+    background-color: #eaeaea;
 }
-/* Styling for Side Dishes Section */
+
+/* ========== SIDE DISHES SECTION ========== */
 .side-dishes-container {
     background: #fff;
     padding: 10px;
@@ -192,6 +211,7 @@ header p {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .side-dishes-container h2 {
     margin-bottom: 10px;
     font-size: 1.8rem;
@@ -199,13 +219,17 @@ header p {
     font-family: 'Rubik Gemstones', sans-serif;
     color: #1b1b1b;
 }
+
 .side-dishes-container h2 span {
-    color: #444; /* Highlight "Spaghetti Carbonara" */
+    color: #444;
 }
+
+/* List formatting and spacing */
 .side-dishes-list {
     list-style: none;
     padding: 40px;
 }
+
 .side-dishes-list li {
     color: #555;
     position: relative;
@@ -213,26 +237,29 @@ header p {
     padding-left: 20px;
     font-size: 1.2rem;
 }
-/* Adding space for emoji icons */
+
+/* Space for emoji icons before list items */
 .side-dishes-list li::before {
     position: absolute;
     font-size: 1.5rem;
     left: 0;
 }
-/*STYLING THE FOOTER SECTION*/
+
+/* ========== FOOTER SECTION ========== */
 footer {
     margin-top: 40px;
     background-color: #333;
     padding: 20px 0;
     color: #fff;
     text-align: center;
-
 }
+
 footer p {
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
 
+/* Simple and clean social link styling */
 footer .social-links a {
     margin: 0 10px;
     color: #fff;
