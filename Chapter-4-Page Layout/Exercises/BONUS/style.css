@@ -1,186 +1,179 @@
 /* General Styles */
+/* Setting the base font family and background color for the entire page */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Clean and modern font */
     margin: 0;
     padding: 0;
-    background-color: #f4f7f9;
-    color: #2e2e2e;
+    background-color: #f4f7f9; /* Light gray background */
+    color: #2e2e2e; /* Dark text color for readability */
 }
-
-/* Header */
+/* Header Styles */
+/* The header has a gradient background, center-aligned text, and some padding */
 header {
-    background: linear-gradient(to right, #cfd8dc, #b0bec5); /* soft gray-blues */
-    color: #2e2e2e;
+    background: linear-gradient(to right, #cfd8dc, #b0bec5); /* Soft gray-blue gradient */
+    color: #2e2e2e; /* Dark text color */
     text-align: center;
     padding: 20px;
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Larger font for the header */
 }
-
+/* Navigation List */
 nav ul {
-    list-style: none;
+    list-style: none; /* Removing the default bullet points */
     padding: 0;
 }
-
+/* Navigation List Items */
 nav ul li {
-    display: inline;
-    margin: 0 15px;
-    text-decoration: underline;
+    display: inline; /* Displaying list items inline */
+    margin: 0 15px; /* Adding space between the links */
+    text-decoration: underline; /* Underlining the text */
 }
-
+/* Navigation Links */
 nav ul li a {
-    color: #2e2e2e;
-    text-decoration: none;
-    font-weight: bold;
+    color: #2e2e2e; /* Dark color for the links */
+    text-decoration: none; /* Removing the default underline */
+    font-weight: bold; /* Making the links bold */
 }
-
-/* Main Layout */
+/* Main Layout Styles */
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Using flexbox to create a flexible layout */
+    flex-direction: column; /* Aligning the items vertically */
+    align-items: center; /* Center-aligning the content */
     padding: 20px;
 }
-
+/* "More Bar" Section */
 .more-bar {
     text-align: center;
     margin-top: 20px;
     padding: 15px;
-    background-color: #b0bec5;
-    border-top: 2px solid #ccc;
+    background-color: #b0bec5; /* Soft gray-blue background */
+    border-top: 2px solid #ccc; /* Light gray border */
 }
-
+/* "See More" Links in the More Bar */
 .more-bar a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #2e2e2e;
+    text-decoration: none; /* Removing underline */
+    font-weight: bold; /* Making the link text bold */
+    color: #2e2e2e; /* Dark text color */
     font-size: 16px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Smooth transition when color changes */
 }
-
+/* Hover Effect on "See More" Links */
 .more-bar a:hover {
-    color: #607d8b;
+    color: #607d8b; /* Changing color to a darker gray-blue on hover */
 }
-
-/* Weekly Schedule */
+/* Weekly Schedule Section */
 .weekly-schedule, .tasks {
-    width: 80%;
-    background: white;
+    width: 80%; /* Giving the sections 80% of the width */
+    background: white; /* White background for the sections */
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 8px; /* Rounded corners */
     margin: 10px 0;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
-    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+    text-align: center; /* Centering the text */
 }
-
+/* Heading Styles for Weekly Schedule and Tasks */
 .weekly-schedule h2, .tasks h2 {
-    background: #c8e6c9; /* soft green */
-    color: #2e2e2e;
+    background: #c8e6c9; /* Soft green background */
+    color: #2e2e2e; /* Dark text color */
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
 }
-
 /* Session Boxes */
 .sessions {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Displaying the sessions in a row */
+    justify-content: space-between; /* Spacing out the sessions evenly */
     margin-top: 10px;
 }
-
+/* Individual Session Box */
 .session {
-    background: #dcedc8; /* pastel green */
+    background: #dcedc8; /* Pastel green background */
     padding: 15px;
     text-align: center;
-    border-radius: 5px;
-    width: 30%;
-    color: #2e2e2e;
+    border-radius: 5px; /* Rounded corners */
+    width: 30%; /* Each session takes up 30% of the width */
+    color: #2e2e2e; /* Dark text color */
 }
-
+/* Session Tag (e.g., Meeting, Brainstorming, etc.) */
 .tag {
-    display: block;
-    background: #a5d6a7;
-    color: #2e2e2e;
+    display: block; /* Displaying the tag as a block element */
+    background: #a5d6a7; /* Light green background for tags */
+    color: #2e2e2e; /* Dark text color */
     padding: 5px;
     margin-top: 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 0.9rem; /* Slightly smaller font for the tag */
 }
-
-/* Task List */
+/* Task List Styles */
 .tasks ul {
-    list-style: none;
+    list-style: none; /* Removing the default bullet points */
     padding: 0;
 }
-
+/* Individual Task List Item */
 .tasks ul li {
-    background: #e0f2f1; /* light teal */
+    background: #e0f2f1; /* Light teal background for tasks */
     padding: 15px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    color: #2e2e2e;
+    margin-bottom: 5px; /* Space between tasks */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.1rem; /* Slightly larger text for the tasks */
+    color: #2e2e2e; /* Dark text color */
 }
-
+/* Task Due Date Styles */
 .tasks ul li span {
-    float: right;
-    color: #00796b;
-    font-weight: bold;
+    float: right; /* Positioning the due date on the right */
+    color: #00796b; /* Dark green color for due date */
+    font-weight: bold; /* Bold text for due date */
 }
-
-/* Task Priorities */
+/* Task Priority Styles */
 .priority {
-    display: inline-block;
+    display: inline-block; /* Displaying the priority label inline */
     margin-left: 10px;
     padding: 3px 8px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    color: #2e2e2e;
+    border-radius: 5px; /* Rounded corners for the priority label */
+    font-size: 0.9rem; /* Smaller font for the priority */
+    color: #2e2e2e; /* Dark text color */
 }
-
+/* High Priority Tasks (Red Background) */
 .high-priority .priority {
-    background: #ffcdd2;
+    background: #ffcdd2; /* Light red background for high priority */
 }
-
+/* Medium Priority Tasks (Yellow Background) */
 .medium-priority .priority {
-    background: #fff9c4;
+    background: #fff9c4; /* Light yellow background for medium priority */
 }
-
+/* Low Priority Tasks (Green Background) */
 .low-priority .priority {
-    background: #c8e6c9;
+    background: #c8e6c9; /* Soft green background for low priority */
 }
-
-/* Sidebar */
+/* Sidebar Styles */
 .sidebar {
-    width: 80%;
-    background: #cfd8dc;
+    width: 80%; /* Sidebar takes up 80% of the width */
+    background: #cfd8dc; /* Soft gray-blue background */
     padding: 20px;
-    color: #2e2e2e;
-    border-radius: 8px;
+    color: #2e2e2e; /* Dark text color */
+    border-radius: 8px; /* Rounded corners */
     margin: 10px 0;
-    text-align: center;
+    text-align: center; /* Centering the text */
 }
-
+/* Sidebar List Styles */
 .sidebar ul {
-    list-style: none;
+    list-style: none; /* Removing default bullets */
     padding: 0;
 }
-
+/* Sidebar List Item Styles */
 .sidebar ul li {
-    margin: 10px 0;
+    margin: 10px 0; /* Adding space between items */
 }
-
+/* Sidebar Links */
 .sidebar ul li a {
-    color: #2e2e2e;
-    text-decoration: none;
-    font-weight: bold;
+    color: #2e2e2e; /* Dark text color */
+    text-decoration: none; /* Removing underline */
+    font-weight: bold; /* Bold text for links */
 }
-
-/* Footer */
+/* Footer Styles */
 footer {
-    background: linear-gradient(to right, #cfd8dc, #b0bec5);
-    color: #2e2e2e;
-    text-align: center;
+    background: linear-gradient(to right, #cfd8dc, #b0bec5); /* Soft gray-blue gradient background */
+    color: #2e2e2e; /* Dark text color */
+    text-align: center; /* Center-aligned text */
     padding: 10px;
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 1rem; /* Standard font size for the footer */
 }
-
